@@ -1,0 +1,92 @@
+/*
+    logowanie/rejestracja form
+*/
+#login-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+#login-div form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 60px 30px;
+    width: 600px;
+    height: 450px;
+}
+#login-div form::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url(tła/login-background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#login-div form::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#login-div form div {
+    margin: 5px;
+}
+.login-input {
+    width: 12vw;
+    border-radius: 5px;
+    height: 20px;
+}
+.submit-btn {       /*wyslij form button*/
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px 5px 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.submit-btn:hover {
+    transform: scale(1.15);
+}
+#register-p {       /*masz juz konto?*/
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+#register-a {       /*to się zaloguj*/
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+#register-a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+footer {
+    margin-top: 15vh;
+}
+#reset-a {
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+#reset-a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}

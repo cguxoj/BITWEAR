@@ -1,0 +1,80 @@
+#produkt-details {
+    display: flex;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 70vh;
+}
+#produkt-details::before {
+    position: absolute;
+    content: "";
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url(tła/produkt-background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    z-index: -2;
+}
+#produkt-details::after {
+    position: absolute;
+    content: "";
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.zdjecia {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.zdjecia img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.info {
+    width: 50%;
+    padding-left: 20px;
+}
+.info h2 {
+    font-size: max(2vw, 24px);
+}
+.info .cena {
+    font-size: max(1.5vw, 18px);
+    color: #fff;
+    font-weight: bold;
+}
+.submit-btn {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-top: 10px;
+}
+.submit-btn:hover {
+    transform: scale(1.05);
+}
+select {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#ilosc {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

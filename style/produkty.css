@@ -1,0 +1,126 @@
+#aside-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vw;
+    margin-bottom: 100px;
+}
+
+#aside-main aside {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    padding-bottom: 30px;
+}
+aside form input[type=number] {
+    width: 12vw;
+    border-radius: 5px;
+    height: 20px;
+}
+.submit-btn {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px 5px 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.submit-btn:hover {
+    transform: scale(1.15);
+}
+
+#aside-main main {
+    width: 80%;
+    margin: 20px;
+    margin-left: 25%;
+}
+@media (max-width: 900px) {
+    #aside-main {
+        flex-direction: column;
+    }
+    #aside-main aside {
+        position: static;
+        width: 92%;
+        max-width: 560px;
+        margin: 25px auto 35px;
+        padding: 20px;
+        order: 1;
+    }
+    #aside-main main {
+        width: 100%;
+        margin: 0 15px !important;
+        order: 2;
+    }
+    .produkty-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .produkt img { 
+        height: 190px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #aside-main aside {
+        margin: 0 10px 25px 10px;
+        padding: 15px;
+    }
+    #aside-main main {
+        margin: 0 10px;
+    }
+    .produkty-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .produkt img {
+        height: 180px;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+}
+
+.produkty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.produkt {
+    border: 1px solid rgba(221, 221, 221, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(141, 141, 141, 0.1);
+    transition: transform 0.3s;
+}
+.produkt:hover {
+    transform: scale(1.03);
+}
+.produkt a {
+    text-decoration: none;
+    color: white;
+}
+.produkt img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.reset-btn {
+    background-color: #ff5c5c !important;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-left: 10px;
+}
+.reset-btn:hover {
+    background-color: #ff9090 !important;
+    transform: scale(1.15);
+}

@@ -1,0 +1,65 @@
+main {
+    margin: 30px;
+}
+.podsumowanie-koszyka, .dane-dostawy, .platnosc {
+    margin-bottom: 85px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 70%;
+}
+#finalizacja-tytul {
+    text-align: center;
+}
+h3 {
+    margin-left: 5vw;
+}
+.suma {
+    margin-top: 50px;
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+main a {
+    color: lightblue;
+    text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
+}
+.submit-btn {
+    padding: 7px 12px 7px 12px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+.submit-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.kod-rabatowy-box { 
+    margin: 20px 0;
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+.kod-success { 
+    color: green; 
+    font-weight: bold; 
+}
+.kod-error { 
+    color: red; 
+}
+.rabat-info { 
+    font-size: 1.1em; 
+    color: #d35400; 
+    margin: 10px 0; 
+}
+
+.input-guest {
+    width: 12vw;
+    border-radius: 5px;
+    height: 20px;
+}
+#last-input-guest {
+    margin-bottom: 3vw; 
+}

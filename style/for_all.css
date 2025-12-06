@@ -1,0 +1,301 @@
+/*
+    dokument
+*/
+@font-face {    /*czcionka dla BITWEAR*/
+    font-family: "VT323";
+    src: url(czcionki/VT323-Regular.ttf);
+}
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: max(1.2vw, 14px);
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+main {
+    color: white;
+    flex: 1;
+    padding-bottom: 50px;
+}
+footer {
+    flex-shrink: 0;
+}
+
+/*
+    formularze
+*/
+input[type=text], input[type=number], input[type=password], input[type=email] {
+    width: 20vw;
+}
+@media (max-width: 900px) {
+    input[type=text], input[type=number], input[type=password], input[type=email] {
+        width: 40vw !important;
+    }
+}
+
+/*
+    navbar i logo
+*/
+nav {
+    font-weight: lighter;
+    padding: 10px;
+    height: 100px !important;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+#logo-img {     /*logo*/
+    width: max(5.6vw, 65px);
+    height: auto;
+}
+#logo-h1 {
+    font-family: "VT323";
+    font-weight: lighter;
+    font-size: max(2.1vw, 25px);
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    text-shadow: 3px 3px rgb(80, 80, 80);
+}
+#logo-a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 15vw;
+    transition: transform 0.2s;
+}
+#logo-a:hover {
+    transform: scale(1.1);
+}
+.dropdown {     /*podlinki*/
+    position: relative;
+    margin-right: 5vw;
+}
+.dropdown:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    z-index: 5;
+    margin-left: -50px;
+    width: 10vw;
+}
+.dropdown:hover .dropdown-content a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: transform 0.2s;
+    color: white;
+}
+.dropdown:hover .dropdown-content a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#nav-icons {    /*konto, ulubione, koszyk*/
+    position: absolute;
+    right: 0;
+}
+#nav-icons a {
+    margin-right: 5px;
+}
+.nav-icon {
+    height: 60px;
+    width: auto;
+    transition: transform 0.2s;
+}
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+.admin-panel-a {
+    text-decoration: none;
+    color: rgb(255, 130, 130);
+    transition: transform 0.2s;
+}
+.admin-panel-a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+nav {
+    position: relative;
+    padding: 15px 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+#logo-a {
+    flex-shrink: 0;
+    margin-right: 0;
+}
+#category-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    margin-left: 10vw;
+}
+.dropdown > p {
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.dropdown:hover > p {
+    text-decoration: underline;
+}
+#nav-icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-right: 10px;
+}
+.nav-icon {
+    height: 52px;
+    transition: transform 0.2s;
+}
+.nav-icon:hover {
+    transform: scale(1.15);
+}
+#hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#hamburger-menu span {
+    width: 34px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+}
+@media (max-width: 1024px) {
+    #category-links, #nav-icons {
+        display: none;
+    }
+    
+    #hamburger-menu {
+        display: flex;
+    }
+    
+    nav {
+        justify-content: center;
+        gap: 0;
+    }
+}
+@media (max-width: 480px) {
+    #logo-img { 
+        width: 48px; 
+    }
+    #logo-h1 { 
+        font-size: 20px; 
+    }
+}
+
+/*
+    stopka
+*/
+footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+footer hr {     /*oddzielnik*/
+    width: 85vw;
+    opacity: 0.15;
+}
+footer img {      /*dla logo w stopce*/
+    width: max(12vw, 110px);
+    height: auto;
+    transition: transform 0.2s;
+}
+footer img:hover {
+    transform: scale(1.1);
+}
+footer p {
+    font-size: max(0.8vw, 12px);
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.footer-social-media {      /*dla logo yt i ig*/
+    width: max(2vw, 27px);
+    height: auto;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+.footer-social-media:hover {
+    transform: scale(1.2);
+}
+
+/*
+    BITWEAR w tekście
+*/
+.bitwear-span {
+    font-family: "VT323";
+    font-size: max(1.6vw, 16px);
+    text-shadow: 3px 3px rgb(80, 80, 80);
+}
+
+/*
+    gotowy div lewa/prawa strona
+*/
+.two-sides-div {
+    width: 100%;
+    display: flex;
+}
+.two-sides-div div {
+    width: 50%;
+}
+.left-side-div {
+    z-index: 0;
+}
+
+/*
+    gotowy div lewa/srodek/prawa strona
+*/
+.three-sides-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.three-sides-div div {
+    width: 33.3%;
+}
+
+/*
+    do wylogowywania sie
+*/
+.wyloguj-sie-a {
+    color: rgb(255, 130, 130);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.wyloguj-sie-a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+button {
+    color: white !important;
+    background-color: gray !important;
+}

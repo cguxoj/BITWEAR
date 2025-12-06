@@ -1,0 +1,39 @@
+.usun-btn {
+    background:rgb(255, 78, 78);
+    color:#fff;
+    padding:8px 12px;
+    border-radius:4px;
+    text-decoration:none;
+    font-size:0.9em;
+    margin-top:10px;
+    display:inline-block;
+}
+.usun-btn:hover {
+    background:#c0392b;
+}
+.komunikat {
+    color:green;
+    font-weight:bold;
+    margin:20px 0;
+    text-align:center;
+}
+h2 {
+    text-align: center;
+    margin: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+main {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#przejdz-do-sklepu {
+    color: lightblue;
+}
+#przejdz-do-sklepu:hover {
+    text-decoration: underline;
+}
